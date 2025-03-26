@@ -1,0 +1,10 @@
+.input{
+    width: 8cm;
+}
+.form-lable{
+    margin-left: 1cm;
+}
+.register{
+    color: cadetblue;
+    cursor: pointer;
+}

@@ -1,0 +1,75 @@
+/* Apply a glassy effect to the entire table */
+.glass-table {
+    background: rgba(255, 255, 255, 0.1); /* Transparent glass effect */
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px); /* Smooth glass effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    color: rgba(255, 255, 255, 0.073); /* Ensure table text stays white */
+}
+.table th, .table td {
+    padding: 8px; /* Reduce padding */
+    text-align: center;
+  }
+  
+
+.text-muted {
+    color: rgba(255, 255, 255, 0.6) !important; /* Light text for extra info */
+}
+  
+  /* Table Head */
+  .glass-table thead {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    font-weight: bold;
+  }
+  
+  /* Table Rows */
+  .glass-table tbody tr {
+    background: transparent !important; /* Fully transparent rows */
+    transition: background 0.3s ease-in-out;
+  }
+  
+  /* Hover effect */
+  .glass-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Table Borders */
+  .glass-table th,
+  .glass-table td {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 15px;
+  }
+  
+  /* Price Change Color */
+  .price-up {
+    color: #00ff00;
+    font-weight: bold;
+  }
+  
+  .price-down {
+    color: #ff4444;
+    font-weight: bold;
+  }
+  .menu-toggle {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    z-index: 1000;
+  }
+  
+  .menu-toggle:hover {
+    color: #ddd;
+  }
+  
+  
+ 

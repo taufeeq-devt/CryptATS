@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Keeps elements from sticking to the top */
+  height: 100vh;
+  margin: 0;
+}
+
+.glass-table {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 10px;
+  overflow: hidden;
+  
+  /* Centering below header */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust this to move it below the header */
+  width: fit-content;
+}
+
+.table {
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: center;
+}
+
+.table-hover tbody tr:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Dropdown adjustments */
+.glass-dropdown {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.glass-dropdown .dropdown-item {
+  cursor: pointer;
+  padding: 8px 12px;
+}

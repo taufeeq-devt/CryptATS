@@ -1,0 +1,49 @@
+.card-item {
+    width: 277px; 
+    height: 300px;
+    border-radius: 15px;
+    background-color: rgba(63, 61, 61, 0.303);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.51);
+    color: #fff;
+    text-align: center;
+    border: 2px solid transparent; /* Initial border */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    margin-top: 30px;
+}
+
+/* Hover effect: Green glow */
+.card-item:hover {
+    transform: scale(1.05);
+    border: 2px solid #03fd073e; /* Green border */
+    box-shadow: 0 0 15px #03fd0700; /* Green glow effect */
+}
+.card-image {
+    width: 170px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 2px;
+    object-fit: contain;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.5));
+  }
+
+/* Responsive Grid Layout */
+@media (max-width: 992px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .col-md-4 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px; /* Spacing between stacked cards */
+    }
+}
